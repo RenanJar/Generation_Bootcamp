@@ -1,28 +1,27 @@
 programa
 {
+	inclua biblioteca Matematica
 	
 	funcao inicio()
 	{
-		real x=0
-		inteiro soma=0
-		inteiro cont=0
-		real	media
-		 
-		enquanto(verdadeiro)
-		{
-			escreva("digite um numero(para pausar digite um numero negativo): ")
-			leia(x)
-			se (x<=0){
-				pare
+
+		inteiro notas[5]
+		inteiro x,maiornum=0
+		para(x=0;x<5;x++){
+			escreva("\nPor favor digite um numero: ")
+			leia(notas[x])
+			se(x==0){
+				maiornum=notas[x]
+			}senao{
+				se(notas[x]>notas[x-1]){
+				maiornum=notas[x]
+				}
 			}
-			soma=soma+x
-			cont=cont+1
-				
 		}
-		media=soma/cont
-		escreva("\n foram lidos:",cont," numeros")
-		escreva("\n O total dos valores lidos: ",soma)
-		escreva("\n A media dos valores lidos: ",media)
+		escreva("\na maior pontuação foi de: ",maiornum)
+		
+
+
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -30,7 +29,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 271; 
+ * @POSICAO-CURSOR = 228; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
