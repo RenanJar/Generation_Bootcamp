@@ -1,0 +1,44 @@
+package blocojava;
+
+public class exercicioextra {
+
+	public static void main(String[] args) {
+		
+		int mapa[][] = new int [3][3];
+		
+		System.out.println("Por favor digite uma cordenada: ");
+		
+		for(int linha=0;linha<3;linha++){
+			
+			
+			for(int coluna=0;coluna<3;coluna++){
+				
+				mapa[linha][coluna]=coluna;
+				
+				System.out.print("[_]");
+				
+			}
+			
+			System.out.println("");
+			
+		}
+		
+		for(int linha=0;linha<3;linha++){
+			
+			
+			for(int coluna=0;coluna<3;coluna++){
+				
+				mapa[linha][coluna]=coluna;
+				
+				System.out.print(mapa[linha][coluna]);
+				
+			}
+			
+			System.out.println("");
+			
+		}
+		
+		 
+	}
+
+}

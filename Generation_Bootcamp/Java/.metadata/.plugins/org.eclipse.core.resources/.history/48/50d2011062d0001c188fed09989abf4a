@@ -1,0 +1,22 @@
+package blocojava;
+
+public class exercicioextra {
+
+	public static void main(String[] args) {
+		
+		int mapa[][] = new int [9][9];
+		
+		for(int linha=0;linha>9;linha++){
+			
+			System.out.println("\n|");
+			for(int coluna=0;coluna>9;coluna++){
+				
+				System.out.println("_");
+			}
+			
+			
+		}
+		 
+	}
+
+}
